@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etvehicleno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:hint="Vehicle  Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/etstartreading"
+        app:layout_constraintEnd_toEndOf="@+id/etstartreading"
+        app:layout_constraintStart_toStartOf="@+id/etstartreading"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etstartreading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:hint="Start Reading"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etendreding"
+        app:layout_constraintStart_toStartOf="@+id/etendreding"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etendreding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="End Teading"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etamount"
+        app:layout_constraintStart_toStartOf="@+id/etamount"
+        app:layout_constraintTop_toBottomOf="@+id/etstartreading" />
+
+    <Button
+        android:id="@+id/btnsubmitvehicle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="118dp"
+        android:text="Add Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etamount" />
+
+    <EditText
+        android:id="@+id/etamount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etendreding" />
+</android.support.constraint.ConstraintLayout>
